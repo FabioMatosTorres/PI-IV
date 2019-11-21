@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PropostaActivity">
+
+
+
+        <ImageView
+            android:id="@+id/fotoProposta"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:src="@mipmap/ic_launcher"
+
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tituloProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:text="TituloProposta"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fotoProposta"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/telefoneProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TelefoneProposta"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tituloProposta"/>
+
+        <TextView
+            android:id="@+id/descricaoProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DescricaoProposta"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/telefoneProposta"/>
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Voltar"
+            android:layout_below="@id/descricaoProposta"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:drawableStart="@drawable/ic_arrow"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp" />
+
+</RelativeLayout>

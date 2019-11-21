@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:elevation="3dp"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    android:outlineAmbientShadowColor="#000">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/fotoProposta"
+        android:scaleType="fitXY"
+
+        android:layout_margin="5dp" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/tituloProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Titulo"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title" />
+
+
+
+
+        <TextView
+            android:id="@+id/descricaoProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Descrição"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/telefoneProposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Telefone:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/deletar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f05a5b"
+                android:text="Deletar"
+
+
+                android:paddingRight="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
